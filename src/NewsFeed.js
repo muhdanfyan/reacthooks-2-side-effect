@@ -63,7 +63,7 @@ export default function NewsFeed() {
       {isError && <p>Maaf bang ada gangguan</p>}
       <ol>
         {news.articles.map((item, index) => (
-          <li key={index}> {item.title} </li>
+          <a href={item.url}><li key={index}> {item.title} </li></a>
         ))}
       </ol>
       {
